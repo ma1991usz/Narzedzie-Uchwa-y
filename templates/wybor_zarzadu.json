@@ -1,0 +1,14 @@
+{
+  "id": "wybor_zarzadu",
+  "name": "Uchwała w sprawie wyboru zarządu",
+  "description": "Uchwała, w której właściciele lokali wybierają członków zarządu lub powołują nowy zarząd na określoną kadencję.",
+  "fields": [
+    { "name": "numerUchwaly", "label": "Numer uchwały", "type": "text", "required": true },
+    { "name": "dataZebrania", "label": "Data zebrania", "type": "date", "required": true },
+    { "name": "nazwaWspolnoty", "label": "Nazwa wspólnoty mieszkaniowej", "type": "text", "required": true },
+    { "name": "kadencja", "label": "Kadencja zarządu (w latach)", "type": "number", "required": true },
+    { "name": "czlonkowieZarzadu", "label": "Imiona i nazwiska członków zarządu (lista)", "type": "textarea", "required": true },
+    { "name": "przewodniczacy", "label": "Przewodniczący zebrania", "type": "text", "required": true }
+  ],
+  "template": "Uchwała nr {{numerUchwaly}}\\nWspólnoty Mieszkaniowej {{nazwaWspolnoty}}\\nz dnia {{dataZebrania}}\\n\\nW sprawie wyboru zarządu wspólnoty mieszkaniowej\\n\\nDziałając na podstawie art. 20 i art. 23 ustawy o własności lokali oraz stosownych postanowień regulaminu, zebranie właścicieli lokali postanawia:\\n\\n1. Powołać zarząd wspólnoty na kadencję trwającą {{kadencja}} lat w następującym składzie:\\n{{czlonkowieZarzadu}}\\n\\n2. Upoważnić zarząd do reprezentowania wspólnoty w czynnościach zwykłego zarządu oraz wykonywania uchwał właścicieli.\\n\\nUchwała wchodzi w życie z dniem podjęcia.\\n\\nPrzewodniczący zebrania: {{przewodniczacy}}"
+}

@@ -1,0 +1,15 @@
+{
+  "id": "plan_finansowy",
+  "name": "Uchwała w sprawie przyjęcia planu finansowego",
+  "description": "Uchwała dotycząca przyjęcia rocznego planu gospodarczego/finansowego i określenia wysokości zaliczek na pokrycie kosztów zarządu.",
+  "fields": [
+    { "name": "numerUchwaly", "label": "Numer uchwały", "type": "text", "required": true },
+    { "name": "dataZebrania", "label": "Data zebrania", "type": "date", "required": true },
+    { "name": "nazwaWspolnoty", "label": "Nazwa wspólnoty mieszkaniowej", "type": "text", "required": true },
+    { "name": "rok", "label": "Rok obowiązywania planu", "type": "number", "required": true },
+    { "name": "planOpis", "label": "Opis planu (główne kategorie wydatków i dochodów)", "type": "textarea", "required": true },
+    { "name": "wysokoscZaliczek", "label": "Wysokość miesięcznych zaliczek (opis)", "type": "textarea", "required": true },
+    { "name": "przewodniczacy", "label": "Przewodniczący zebrania", "type": "text", "required": true }
+  ],
+  "template": "Uchwała nr {{numerUchwaly}}\\nWspólnoty Mieszkaniowej {{nazwaWspolnoty}}\\nz dnia {{dataZebrania}}\\n\\nW sprawie przyjęcia planu finansowego na rok {{rok}}\\n\\nNa podstawie art. 22 ust. 3 i art. 23 ustawy o własności lokali oraz postanowień regulaminu wspólnoty, zebranie właścicieli lokali postanawia co następuje:\\n\\n1. Przyjmuje się plan finansowy na rok {{rok}} w następującym brzmieniu:\\n{{planOpis}}\\n\\n2. Ustala się wysokość miesięcznych zaliczek na pokrycie kosztów zarządu i funduszu remontowego:\\n{{wysokoscZaliczek}}\\n\\n3. Zobowiązuje się zarząd do realizacji planu i przedstawienia właścicielom półrocznego sprawozdania z jego wykonania.\\n\\nUchwała wchodzi w życie z dniem podjęcia.\\n\\nPrzewodniczący zebrania: {{przewodniczacy}}"
+}

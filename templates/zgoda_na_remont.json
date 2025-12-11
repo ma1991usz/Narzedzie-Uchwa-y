@@ -1,0 +1,15 @@
+{
+  "id": "zgoda_na_remont",
+  "name": "Uchwała w sprawie zgody na remont",
+  "description": "Uchwała upoważniająca zarząd do przeprowadzenia konkretnego remontu lub inwestycji w nieruchomości wspólnej.",
+  "fields": [
+    { "name": "numerUchwaly", "label": "Numer uchwały", "type": "text", "required": true },
+    { "name": "dataZebrania", "label": "Data zebrania", "type": "date", "required": true },
+    { "name": "nazwaWspolnoty", "label": "Nazwa wspólnoty mieszkaniowej", "type": "text", "required": true },
+    { "name": "opisRemontu", "label": "Opis remontu lub inwestycji", "type": "textarea", "required": true },
+    { "name": "kosztRemontu", "label": "Szacowany koszt (kwota i waluta)", "type": "text", "required": true },
+    { "name": "zrodloFinansowania", "label": "Źródło finansowania (np. fundusz remontowy)", "type": "text", "required": true },
+    { "name": "przewodniczacy", "label": "Przewodniczący zebrania", "type": "text", "required": true }
+  ],
+  "template": "Uchwała nr {{numerUchwaly}}\\nWspólnoty Mieszkaniowej {{nazwaWspolnoty}}\\nz dnia {{dataZebrania}}\\n\\nW sprawie wyrażenia zgody na przeprowadzenie remontu\\n\\nNa podstawie art. 22 ust. 3 oraz art. 23 ustawy o własności lokali zebranie właścicieli lokali postanawia:\\n\\n1. Wyraża się zgodę na przeprowadzenie następującego remontu / inwestycji w nieruchomości wspólnej: \\n{{opisRemontu}}\\n\\n2. Szacowany koszt realizacji zadania wynosi: {{kosztRemontu}}.\\n\\n3. Źródłem finansowania będzie: {{zrodloFinansowania}}.\\n\\n4. Upoważnia się zarząd do zawarcia umów i przeprowadzenia remontu w terminie i na warunkach określonych w dokumentacji.\\n\\nUchwała wchodzi w życie z dniem podjęcia.\\n\\nPrzewodniczący zebrania: {{przewodniczacy}}"
+}

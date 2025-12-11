@@ -1,0 +1,14 @@
+{
+  "id": "zmiana_regulaminu",
+  "name": "Uchwała w sprawie zmiany regulaminu wspólnoty",
+  "description": "Uchwała wprowadzająca zmiany w regulaminie wspólnoty mieszkaniowej (np. w zasadach korzystania z części wspólnych).",
+  "fields": [
+    { "name": "numerUchwaly", "label": "Numer uchwały", "type": "text", "required": true },
+    { "name": "dataZebrania", "label": "Data zebrania", "type": "date", "required": true },
+    { "name": "nazwaWspolnoty", "label": "Nazwa wspólnoty mieszkaniowej", "type": "text", "required": true },
+    { "name": "opisZmian", "label": "Opis zmian w regulaminie", "type": "textarea", "required": true },
+    { "name": "wejscieWZycie", "label": "Data wejścia zmian w życie", "type": "date", "required": true },
+    { "name": "przewodniczacy", "label": "Przewodniczący zebrania", "type": "text", "required": true }
+  ],
+  "template": "Uchwała nr {{numerUchwaly}}\\nWspólnoty Mieszkaniowej {{nazwaWspolnoty}}\\nz dnia {{dataZebrania}}\\n\\nW sprawie zmiany regulaminu wspólnoty mieszkaniowej\\n\\nNa podstawie art. 22 ust. 3 i art. 23 ustawy o własności lokali zebrani właściciele lokali postanawiają:\\n\\n1. Wprowadzić następujące zmiany do regulaminu wspólnoty:\\n{{opisZmian}}\\n\\n2. Zobowiązać zarząd do opublikowania tekstu jednolitego regulaminu uwzględniającego powyższe zmiany.\\n\\n3. Ustalić, że zmiany wchodzą w życie z dniem {{wejscieWZycie}}.\\n\\nUchwała wchodzi w życie z dniem podjęcia.\\n\\nPrzewodniczący zebrania: {{przewodniczacy}}"
+}
