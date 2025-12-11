@@ -1,0 +1,15 @@
+{
+  "id": "absolutorium",
+  "name": "Uchwała w sprawie udzielenia absolutorium zarządowi",
+  "description": "Uchwała, w której właściciele lokali oceniają pracę zarządu i udzielają (lub odmawiają) absolutorium za poprzedni rok obrachunkowy.",
+  "fields": [
+    { "name": "numerUchwaly", "label": "Numer uchwały", "type": "text", "required": true },
+    { "name": "dataZebrania", "label": "Data zebrania", "type": "date", "required": true },
+    { "name": "nazwaWspolnoty", "label": "Nazwa wspólnoty mieszkaniowej", "type": "text", "required": true },
+    { "name": "rok", "label": "Rok, którego dotyczy absolutorium", "type": "number", "required": true },
+    { "name": "czlonkowieZarzadu", "label": "Członkowie zarządu (lista)", "type": "textarea", "required": true },
+    { "name": "wynik", "label": "Czy udzielono absolutorium? (Tak/Nie)", "type": "text", "required": true },
+    { "name": "przewodniczacy", "label": "Przewodniczący zebrania", "type": "text", "required": true }
+  ],
+  "template": "Uchwała nr {{numerUchwaly}}\\nWspólnoty Mieszkaniowej {{nazwaWspolnoty}}\\nz dnia {{dataZebrania}}\\n\\nW sprawie udzielenia absolutorium zarządowi za rok {{rok}}\\n\\nNa podstawie art. 22 ust. 3 i art. 23 ustawy o własności lokali oraz zgodnie z zasadami prawidłowego zarządzania nieruchomością wspólną, zebranie właścicieli lokali postanawia:\\n\\n1. Po zapoznaniu się ze sprawozdaniem zarządu z działalności w roku {{rok}} oraz sprawozdaniem finansowym, właściciele lokali decydują o udzieleniu absolutorium dla następujących członków zarządu:\\n{{czlonkowieZarzadu}}\\n\\n2. Wynik głosowania: {{wynik}}.\\n\\n3. Uchwała wchodzi w życie z dniem podjęcia.\\n\\nPrzewodniczący zebrania: {{przewodniczacy}}"
+}
